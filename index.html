@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego de batallas de mascotas Moképon, Desarrollado durante el curso Programación Básica de Platzi">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/ultra-ball.png" type="image/x-icon">
+    <title>Moképon</title>
+</head>
+<body id="main">
+    <section class="header">
+        <h1>Moképon</h1>
+    </section>
+     
+    <section id="petSelect">
+        <h2>SELECCIONA TU MASCOTA</h2> 
+
+        <div id ="contenedorTarjetas" class="tarjetas">
+        </div> 
+
+        <button id="select-pet-button"><span>JUGAR</span></button>
+    </section>
+
+    <section id="map-section">
+        <h1>Recorrer el mapa con tu Moképon</h1>
+        <canvas id="map"></canvas>
+        <div class="contenedorBotonesMovimiento">
+            <div class="botonMovimientoSuperior">
+                <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverArriba()" ontouchstart="moverArriba()">ARRIBA</button>
+            </div>
+            <div id="botonesMovimientoInferiores" class="botonesMovimientoInferiores">
+                <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()"ontouchstart="moverIzquierda()">IZQUIERDA</button>
+                <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()"ontouchstart="moverAbajo()">ABAJO</button>
+                <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()"
+                ontouchstart="moverDerecha()">DERECHA</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="attackSelect">
+        <div class="selectAttack">
+            <h2 id="title">Selecciona tu ataque: </h2>
+            <div id="content-button" class="content-button">
+            </div>
+            <p id="resultado">La batalla no ha empezado</p>
+            <div class="battleContent">
+                <div id="playerContentBattle" class="playerBattleContent">
+                    <p><span id="playerPetName">:</span><span id="playerLives"> 3</span><span class="hearth">❤</span></p>
+                    <p>Ataca con:</p>
+                </div>
+                <div id="enemyContentBattle" class="enemyBattleContent">
+                    <p><span id="enemyPetName">:</span><span id="enemyLives"> 3</span><span class="hearth">❤</span></p>
+                    <p>Ataca con:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="messagesContent">
+        <h2>Ganador</h2>
+    </section>
+
+    <section id="footer">
+        <button id="restart">Volver a Jugar</button>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
