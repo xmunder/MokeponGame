@@ -15,7 +15,7 @@ El juego cuenta con las siguientes características:
 
 ## Contacto
 
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi correo electrónico: tuemail@example.com.
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi correo electrónico: gomezcristian676@gmail.com.
 
 ## Vista previa
 
